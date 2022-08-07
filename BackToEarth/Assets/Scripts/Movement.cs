@@ -7,14 +7,16 @@ public class Movement : MonoBehaviour
 {
     private Scene scene;
     Rigidbody rb;
-    [SerializeField] private float mainThrustForce = 1000;
-    [SerializeField] private float rotationThrustForce = 100;
+    AudioSource audioSource;
+    [SerializeField] private float mainThrustForce = 1000f;
+    [SerializeField] private float rotationThrustForce = 100f;
     // Start is called before the first frame update
     void Start()
     {
         scene = SceneManager.GetActiveScene();
         ChangeGravityBasedOnScene(scene.name);
         rb = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -31,6 +33,14 @@ public class Movement : MonoBehaviour
         {
             //scrivere Vector3.up è uguale a 0, 1, 0
             rb.AddRelativeForce(mainThrustForce * Time.deltaTime * Vector3.up);
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            audioSource.Stop();
         }
     }
 
