@@ -70,7 +70,7 @@ public class Movement : MonoBehaviour
     {
         switch (sceneName)
         {
-            case "Sandbox":
+            case "EarthLevel":
                 Physics.gravity = new Vector3(0, -9.81F, 0);
                 break;
         }
