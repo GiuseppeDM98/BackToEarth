@@ -6,7 +6,7 @@
 
  I will update this README file to notify when the last commit will be done following the lessons of the course!
  
- # Finished section of the course
+ # 08/08/2022 Finished section of the course
  From now on, all commits will be the result of what I have learned!
 
 # Game Theme
