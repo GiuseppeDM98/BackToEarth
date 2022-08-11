@@ -18,7 +18,7 @@ public class UI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(collisionHandler.showMessage)
+        if(collisionHandler.isTransitioning)
         {
             textDisplay.text = collisionHandler.messageForLoading;
         }

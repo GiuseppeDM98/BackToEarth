@@ -6,27 +6,63 @@ using UnityEngine;
 public class CollisionHandler : MonoBehaviour
 {
     public string messageForLoading = "";
-    public bool showMessage = false;
-    private void OnCollisionEnter(Collision collision)
+    AudioSource audioSource;
+    public bool isTransitioning = false;
+    Movement movement;
+
+    [SerializeField] AudioClip crashSound;
+    [SerializeField] AudioClip successSound;
+    [SerializeField] ParticleSystem crashParticles;
+    [SerializeField] ParticleSystem successParticles;
+
+    private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+        movement = GetComponent<Movement>();
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        if(isTransitioning) { return; }
         switch (collision.gameObject.tag)
         {
             case "Friendly":
                 Debug.Log("This thing is friendly");
                 break;
             case "Finish":
-                Debug.Log("Congrats, you finished!");
+                DisableMovementAndPlayAudio(successSound);
+                PlayParticleEffects(successParticles);
                 messageForLoading = "You have reached the landing pad!\n" +
                 "Waiting to refuel the rocket for the next destination!";
                 StartCoroutine(WaitSecondsBeforeLoadingScene(3f, true));
                 break;
             default:
-                Debug.Log("Sorry, you blew up!");
+                DisableMovementAndPlayAudio(crashSound);
+                PlayParticleEffects(crashParticles);
                 messageForLoading = "You crashed!\n" +
-                "Waiting to fix the rocket, you will start from the last launch pad you reached!";
+                "Waiting to fix the rocket, you will start from the launch pad!";
                 StartCoroutine(WaitSecondsBeforeLoadingScene(3f, false));
                 break;
         }
+    }
+
+    private void DisableMovementAndPlayAudio(AudioClip sound)
+    {
+        isTransitioning = true;
+        audioSource.Stop();
+        movement.enabled = false;
+        movement.StopThrusting();
+        movement.StopRotating();
+        audioSource.PlayOneShot(sound);
+    }
+
+    public void PlayParticleEffects(ParticleSystem particle)
+    {
+        particle.Play();
+    }
+
+    public void StopParticleEffects(ParticleSystem particle)
+    {
+        particle.Stop();
     }
 
     void ReloadCurrentLevel()
@@ -36,7 +72,7 @@ public class CollisionHandler : MonoBehaviour
         print("Reloaded current level");
     }
 
-    void LoadNextLevel()
+    public void LoadNextLevel()
     {
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
         //Se ho raggiunto la fine dei livelli ricarico il primo
@@ -51,7 +87,6 @@ public class CollisionHandler : MonoBehaviour
     //se bool è true lo script carica il prossimo livello, altrimenti ricarica il livello attuale
     IEnumerator WaitSecondsBeforeLoadingScene(float delayTime, bool choice)
     {
-        showMessage = true;
         yield return new WaitForSeconds(delayTime);
         if(choice)
         {

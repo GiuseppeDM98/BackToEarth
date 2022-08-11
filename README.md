@@ -10,5 +10,5 @@
  From now on, all commits will be the result of what I have learned!
 
 # Game Theme
- You are a space pioneer , after a space mission went wrong, you crashed on Pluto, with your spaceship you have to overcome the difficulties that you will find on all
- the planets of the solar system and get back to earth!
+You are a space pioneer who is coming back from an extrasolar space mission, you are forced to stop on Pluto because you notice that there are alien structures on the planet and on the other planets of the solar system, including the earth!
+Your new mission is to overcome all obstacles and get Back to Earth!
