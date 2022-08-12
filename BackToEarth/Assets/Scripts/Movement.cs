@@ -21,10 +21,10 @@ public class Movement : MonoBehaviour
     void Start()
     {
         scene = SceneManager.GetActiveScene();
-        ChangeGravityBasedOnScene(scene.name);
         rb = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
         collisionHandler = GetComponent<CollisionHandler>();
+        ChangeGravityBasedOnScene(scene.name);
     }
 
 
@@ -131,10 +131,10 @@ public class Movement : MonoBehaviour
     {
         switch (sceneName)
         {
-            case "EarthLevel":
+            case "Earth":
                 Physics.gravity = new Vector3(0, -9.807F, 0);
                 break;
-            case "MarsLevel":
+            case "Mars":
                 Physics.gravity = new Vector3(0, -3.721F, 0);
                 break;
         }
