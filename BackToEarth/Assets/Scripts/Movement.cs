@@ -24,7 +24,6 @@ public class Movement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
         collisionHandler = GetComponent<CollisionHandler>();
-        ChangeGravityBasedOnScene(scene.name);
     }
 
     private void FixedUpdate()
@@ -115,22 +114,5 @@ public class Movement : MonoBehaviour
         //scrivere Vector3.forward è uguale a 0, 0, 1
         transform.Rotate(rotationThisFrame * Time.deltaTime * Vector3.forward);
         rb.freezeRotation = false;
-    }
-
-    //Quando si cambierà livello idealmente cambierà anche la gravità
-    private void ChangeGravityBasedOnScene(string sceneName)
-    {
-        switch (sceneName)
-        {
-            case "Earth":
-                Physics.gravity = new Vector3(0, -9.807F, 0);
-                break;
-            case "Mars":
-                Physics.gravity = new Vector3(0, -3.721F, 0);
-                break;
-            case "Pluto":
-                Physics.gravity = new Vector3(0, -0.62F, 0);
-                break;
-        }
     }
 }

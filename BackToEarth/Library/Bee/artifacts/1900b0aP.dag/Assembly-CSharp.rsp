@@ -307,6 +307,8 @@
 -r:"Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/CollisionHandler.cs"
 "Assets/Scripts/Movement.cs"
+"Assets/Scripts/MovingObstacle.cs"
+"Assets/Scripts/QuitApplication.cs"
 "Assets/Scripts/UI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
