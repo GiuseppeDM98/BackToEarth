@@ -27,14 +27,6 @@ public class Movement : MonoBehaviour
         ChangeGravityBasedOnScene(scene.name);
     }
 
-
-    // Update is called once per frame
-    /*void Update()
-    {
-        ProcessThrust();
-        ProcessRotation();
-    }*/
-
     private void FixedUpdate()
     {
         ProcessThrust();
@@ -94,7 +86,6 @@ public class Movement : MonoBehaviour
 
     private void RotateRight()
     {
-        //scrivere Vector3.forward è uguale a 0, 0, -1
         ApplyRotation(-rotationThrustForce);
         if (!leftSideBoosterParticles.isPlaying)
         {
@@ -104,7 +95,6 @@ public class Movement : MonoBehaviour
 
     private void RotateLeft()
     {
-        //scrivere Vector3.forward è uguale a 0, 0, 1
         ApplyRotation(rotationThrustForce);
         if (!rightSideBoosterParticles.isPlaying)
         {
@@ -122,6 +112,7 @@ public class Movement : MonoBehaviour
     private void ApplyRotation(float rotationThisFrame)
     {
         rb.freezeRotation = true;
+        //scrivere Vector3.forward è uguale a 0, 0, 1
         transform.Rotate(rotationThisFrame * Time.deltaTime * Vector3.forward);
         rb.freezeRotation = false;
     }
@@ -136,6 +127,9 @@ public class Movement : MonoBehaviour
                 break;
             case "Mars":
                 Physics.gravity = new Vector3(0, -3.721F, 0);
+                break;
+            case "Pluto":
+                Physics.gravity = new Vector3(0, -0.62F, 0);
                 break;
         }
     }

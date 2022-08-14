@@ -7,9 +7,7 @@ using UnityEngine;
 public class UI : MonoBehaviour
 {
     Scene scene;
-    CollisionHandler collisionHandler;
-    [SerializeField] GameObject player;
-    [SerializeField] TextMeshProUGUI textDisplay;
+    [SerializeField] TextMeshProUGUI textForLoading;
     [SerializeField] TextMeshProUGUI textLevelDisplay;
 
     // Start is called before the first frame update
@@ -17,20 +15,15 @@ public class UI : MonoBehaviour
     {
         scene = SceneManager.GetActiveScene();
         ChangeTextLevelDisplay(scene.name);
-        collisionHandler = player.GetComponent<CollisionHandler>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(collisionHandler.isTransitioning)
-        {
-            textDisplay.text = collisionHandler.messageForLoading;
-        }
     }
 
     public void ChangeTextLevelDisplay(string text)
     {
-        textLevelDisplay.text = "You're on " + text;
+        textLevelDisplay.text = "You're on " + text + " gravity is " + Physics.gravity.y + " ms";
+    }
+
+    public void PrintTextForLoading(string text)
+    {
+        textForLoading.text = text;
     }
 }

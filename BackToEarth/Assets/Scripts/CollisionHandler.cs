@@ -6,9 +6,12 @@ using UnityEngine;
 public class CollisionHandler : MonoBehaviour
 {
     public string messageForLoading = "";
-    AudioSource audioSource;
     public bool isTransitioning = false;
+
+    AudioSource audioSource;
     Movement movement;
+    [SerializeField] GameObject ui;
+    UI userInterface;
 
     [SerializeField] AudioClip crashSound;
     [SerializeField] AudioClip successSound;
@@ -17,9 +20,11 @@ public class CollisionHandler : MonoBehaviour
 
     private void Start()
     {
+        userInterface = ui.GetComponent<UI>();
         audioSource = GetComponent<AudioSource>();
         movement = GetComponent<Movement>();
     }
+
     void OnCollisionEnter(Collision collision)
     {
         if(isTransitioning) { return; }
@@ -30,17 +35,19 @@ public class CollisionHandler : MonoBehaviour
                 break;
             case "Finish":
                 DisableMovementAndPlayAudio(successSound);
-                PlayParticleEffects(successParticles);
                 messageForLoading = "You have reached the landing pad!\n" +
                 "Waiting to refuel the rocket for the next destination!";
-                StartCoroutine(WaitSecondsBeforeLoadingScene(3f, true));
+                userInterface.PrintTextForLoading(messageForLoading);
+                PlayParticleEffects(successParticles);
+                StartCoroutine(WaitSecondsBeforeLoadingScene(4f, true));
                 break;
             default:
                 DisableMovementAndPlayAudio(crashSound);
-                PlayParticleEffects(crashParticles);
                 messageForLoading = "You crashed!\n" +
                 "Waiting to fix the rocket, you will start from the launch pad!";
-                StartCoroutine(WaitSecondsBeforeLoadingScene(3f, false));
+                userInterface.PrintTextForLoading(messageForLoading);
+                PlayParticleEffects(crashParticles);
+                StartCoroutine(WaitSecondsBeforeLoadingScene(4f, false));
                 break;
         }
     }
