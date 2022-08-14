@@ -13,3 +13,7 @@
 You are a space pioneer who is coming back from an extrasolar space mission, you are forced to stop on Pluto because you notice that there are alien structures on the planet and on the other planets of the solar system, including the earth!
 
 Your new mission is to overcome all obstacles and get Back to Earth!
+
+# You can play here:
+https://sharemygame.com/@GdmDeveloper/back-to-earth
+https://simmer.io/@GdmDeveloper/back-to-earth
