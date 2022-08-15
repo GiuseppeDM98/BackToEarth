@@ -1,4 +1,4 @@
-# BackToEarth
+# BackToEarth (Unity Version 2021.3.1f1)
  A game where the goal is to get your spaceship out of the maze and back to earth!
  
  The initial part of this videogame will be built following section 3 of the course "Complete C # Unity Game Developer 3D" on Udemy.
