@@ -14,6 +14,10 @@ You are a space pioneer who is coming back from an extrasolar space mission, you
 
 Your new mission is to overcome all obstacles and get Back to Earth!
 
+# Future additions
+There will be 7 levels in all (One per planet of the solar system).
+I would like to add intermediate landing pads to the level, so as to decrease the difficulty (If you lose before reaching a final landing pad you restart from the last landing pad "touched").
+
 # You can play here:
 https://sharemygame.com/@GdmDeveloper/back-to-earth
 
