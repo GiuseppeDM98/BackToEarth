@@ -18,6 +18,3 @@ Your new mission is to overcome all obstacles and get Back to Earth!
 https://sharemygame.com/@GdmDeveloper/back-to-earth
 
 https://simmer.io/@GdmDeveloper/back-to-earth
-
-# Contributors: 
-https://github.com/SirMors
