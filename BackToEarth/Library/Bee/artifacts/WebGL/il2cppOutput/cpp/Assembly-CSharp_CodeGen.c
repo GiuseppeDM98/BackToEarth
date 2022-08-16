@@ -50,8 +50,8 @@ extern void Movement_FixedUpdate_mBAFAFB0C3B305F3F3FCDE7E0AE3B61C89E84B6CC (void
 extern void Movement_ProcessThrust_m00C0C2050876627E007FD4B2F89A26BD7F3511BF (void);
 // 0x00000013 System.Void Movement::ProcessRotation()
 extern void Movement_ProcessRotation_mB5D7361465FD978A987FDA02AACC600519811276 (void);
-// 0x00000014 System.Void Movement::StartThrusting()
-extern void Movement_StartThrusting_mAB36E6FA7621C40C4F157366F3B0EA5A9BCE62C1 (void);
+// 0x00000014 System.Void Movement::StartThrusting(System.Single,System.Boolean)
+extern void Movement_StartThrusting_mB79660DCC178096C1DF13B658BAB7B1D449CA61D (void);
 // 0x00000015 System.Void Movement::StopThrusting()
 extern void Movement_StopThrusting_m6C8BD1DBEACE6B814109831E0B83D85A4A8A7160 (void);
 // 0x00000016 System.Void Movement::RotateRight()
@@ -641,7 +641,7 @@ static Il2CppMethodPointer s_methodPointers[304] =
 	Movement_FixedUpdate_mBAFAFB0C3B305F3F3FCDE7E0AE3B61C89E84B6CC,
 	Movement_ProcessThrust_m00C0C2050876627E007FD4B2F89A26BD7F3511BF,
 	Movement_ProcessRotation_mB5D7361465FD978A987FDA02AACC600519811276,
-	Movement_StartThrusting_mAB36E6FA7621C40C4F157366F3B0EA5A9BCE62C1,
+	Movement_StartThrusting_mB79660DCC178096C1DF13B658BAB7B1D449CA61D,
 	Movement_StopThrusting_m6C8BD1DBEACE6B814109831E0B83D85A4A8A7160,
 	Movement_RotateRight_m33DF0E2400A72EB634DC19838B2A2A4EC22A6E02,
 	Movement_RotateLeft_mE0CF87DDFBAB5B0BB2EE12D740A666F53FBBE831,
@@ -948,7 +948,7 @@ static const int32_t s_InvokerIndices[304] =
 	4886,
 	4886,
 	4886,
-	4886,
+	2229,
 	4886,
 	4886,
 	4886,

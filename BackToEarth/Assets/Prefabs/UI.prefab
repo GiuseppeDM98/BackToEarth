@@ -253,10 +253,12 @@ MonoBehaviour:
 
     Press Space to go up
 
-    Press A to go left
+    Press W to go back
 
     Press
-    D to go right
+    A to go left
+
+    Press D to go right
 
     Press Esc to quit the game'
   m_isRightToLeft: 0

@@ -36,7 +36,11 @@ public class Movement : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.Space))
         {
-            StartThrusting();
+            StartThrusting(mainThrustForce, true);
+        }
+        else if (Input.GetKey(KeyCode.W))
+        {
+            StartThrusting(-mainThrustForce, false);
         }
         else
         {
@@ -49,7 +53,6 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             RotateLeft();
-
         }
         else if (Input.GetKey(KeyCode.D))
         {
@@ -61,15 +64,15 @@ public class Movement : MonoBehaviour
         }
     }
 
-    void StartThrusting()
+    void StartThrusting(float forceApplied, bool playParticleEffects)
     {
         //scrivere Vector3.up è uguale a 0, 1, 0
-        rb.AddRelativeForce(mainThrustForce * Time.deltaTime * Vector3.up);
+        rb.AddRelativeForce(forceApplied * Time.deltaTime * Vector3.up);
         if (!audioSource.isPlaying)
         {
             audioSource.PlayOneShot(mainEngine);
         }
-        if (!mainBoosterParticles.isPlaying)
+        if (!mainBoosterParticles.isPlaying && playParticleEffects)
         {
             collisionHandler.PlayParticleEffects(mainBoosterParticles);
         }

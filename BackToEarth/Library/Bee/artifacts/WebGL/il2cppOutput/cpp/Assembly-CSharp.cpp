@@ -6319,8 +6319,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Movement_ProcessThrust_m00C0C2050876627E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Movement_ProcessRotation_mB5D7361465FD978A987FDA02AACC600519811276 (Movement_t7ED030E814A2C7E091389CFDABC85C6995DD35E7* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Input::GetKey(UnityEngine.KeyCode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKey_m0BF0499CADC378F02B6BEE2399FB945AB929B81A (int32_t ___key0, const RuntimeMethod* method) ;
-// System.Void Movement::StartThrusting()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Movement_StartThrusting_mAB36E6FA7621C40C4F157366F3B0EA5A9BCE62C1 (Movement_t7ED030E814A2C7E091389CFDABC85C6995DD35E7* __this, const RuntimeMethod* method) ;
+// System.Void Movement::StartThrusting(System.Single,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Movement_StartThrusting_mB79660DCC178096C1DF13B658BAB7B1D449CA61D (Movement_t7ED030E814A2C7E091389CFDABC85C6995DD35E7* __this, float ___forceApplied0, bool ___playParticleEffects1, const RuntimeMethod* method) ;
 // System.Void Movement::RotateLeft()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Movement_RotateLeft_mE0CF87DDFBAB5B0BB2EE12D740A666F53FBBE831 (Movement_t7ED030E814A2C7E091389CFDABC85C6995DD35E7* __this, const RuntimeMethod* method) ;
 // System.Void Movement::RotateRight()
@@ -7583,16 +7583,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Movement_ProcessThrust_m00C0C2050876627E
 		L_0 = Input_GetKey_m0BF0499CADC378F02B6BEE2399FB945AB929B81A(((int32_t)32), NULL);
 		if (!L_0)
 		{
-			goto IL_0010;
+			goto IL_0017;
 		}
 	}
 	{
-		// StartThrusting();
-		Movement_StartThrusting_mAB36E6FA7621C40C4F157366F3B0EA5A9BCE62C1(__this, NULL);
+		// StartThrusting(mainThrustForce, true);
+		float L_1 = __this->___mainThrustForce_9;
+		Movement_StartThrusting_mB79660DCC178096C1DF13B658BAB7B1D449CA61D(__this, L_1, (bool)1, NULL);
 		return;
 	}
 
-IL_0010:
+IL_0017:
+	{
+		// else if (Input.GetKey(KeyCode.W))
+		bool L_2;
+		L_2 = Input_GetKey_m0BF0499CADC378F02B6BEE2399FB945AB929B81A(((int32_t)119), NULL);
+		if (!L_2)
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		// StartThrusting(-mainThrustForce, false);
+		float L_3 = __this->___mainThrustForce_9;
+		Movement_StartThrusting_mB79660DCC178096C1DF13B658BAB7B1D449CA61D(__this, ((-L_3)), (bool)0, NULL);
+		return;
+	}
+
+IL_002f:
 	{
 		// StopThrusting();
 		Movement_StopThrusting_m6C8BD1DBEACE6B814109831E0B83D85A4A8A7160(__this, NULL);
@@ -7642,13 +7660,13 @@ IL_0020:
 		return;
 	}
 }
-// System.Void Movement::StartThrusting()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Movement_StartThrusting_mAB36E6FA7621C40C4F157366F3B0EA5A9BCE62C1 (Movement_t7ED030E814A2C7E091389CFDABC85C6995DD35E7* __this, const RuntimeMethod* method) 
+// System.Void Movement::StartThrusting(System.Single,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Movement_StartThrusting_mB79660DCC178096C1DF13B658BAB7B1D449CA61D (Movement_t7ED030E814A2C7E091389CFDABC85C6995DD35E7* __this, float ___forceApplied0, bool ___playParticleEffects1, const RuntimeMethod* method) 
 {
 	{
-		// rb.AddRelativeForce(mainThrustForce * Time.deltaTime * Vector3.up);
+		// rb.AddRelativeForce(forceApplied * Time.deltaTime * Vector3.up);
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_0 = __this->___rb_5;
-		float L_1 = __this->___mainThrustForce_9;
+		float L_1 = ___forceApplied0;
 		float L_2;
 		L_2 = Time_get_deltaTime_m7AB6BFA101D83E1D8F2EF3D5A128AEE9DDBF1A6D(NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
@@ -7662,7 +7680,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Movement_StartThrusting_mAB36E6FA7621C40
 		L_6 = AudioSource_get_isPlaying_mC203303F2F7146B2C056CB47B9391463FDF408FC(L_5, NULL);
 		if (L_6)
 		{
-			goto IL_003f;
+			goto IL_003a;
 		}
 	}
 	{
@@ -7672,22 +7690,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Movement_StartThrusting_mAB36E6FA7621C40
 		AudioSource_PlayOneShot_m098BCAE084AABB128BB19ED805D2D985E7B75112(L_7, L_8, NULL);
 	}
 
-IL_003f:
+IL_003a:
 	{
-		// if (!mainBoosterParticles.isPlaying)
+		// if (!mainBoosterParticles.isPlaying && playParticleEffects)
 		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_9 = __this->___mainBoosterParticles_11;
 		bool L_10;
 		L_10 = ParticleSystem_get_isPlaying_mC5170DA3C904670B88200C8DA1E0F8FC1BC7C42B(L_9, NULL);
-		if (L_10)
+		bool L_11 = ___playParticleEffects1;
+		if (!((int32_t)(((((int32_t)L_10) == ((int32_t)0))? 1 : 0)&(int32_t)L_11)))
 		{
 			goto IL_005d;
 		}
 	}
 	{
 		// collisionHandler.PlayParticleEffects(mainBoosterParticles);
-		CollisionHandler_t43CD091F0FDAFDA2162A77A6D7B1A06E5A9E2215* L_11 = __this->___collisionHandler_7;
-		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_12 = __this->___mainBoosterParticles_11;
-		CollisionHandler_PlayParticleEffects_m1C5F90D0161ED420E85136D9F1827A2D997001F9(L_11, L_12, NULL);
+		CollisionHandler_t43CD091F0FDAFDA2162A77A6D7B1A06E5A9E2215* L_12 = __this->___collisionHandler_7;
+		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_13 = __this->___mainBoosterParticles_11;
+		CollisionHandler_PlayParticleEffects_m1C5F90D0161ED420E85136D9F1827A2D997001F9(L_12, L_13, NULL);
 	}
 
 IL_005d:
