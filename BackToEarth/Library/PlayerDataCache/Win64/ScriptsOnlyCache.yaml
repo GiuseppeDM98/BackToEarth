@@ -1819,4 +1819,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Pluto.unity
   - Assets/Scenes/Mars.unity
   - Assets/Scenes/Earth.unity
-  playerPath: C:/Users/Giuseppe/Downloads/Build/BackToEarth.exe
+  playerPath: C:/Users/Giuseppe/Documents/GitHub/BackToEarth/BackToEarth/Build/BackToEarth.exe
