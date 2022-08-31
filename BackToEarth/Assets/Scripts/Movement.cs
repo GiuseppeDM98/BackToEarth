@@ -38,10 +38,6 @@ public class Movement : MonoBehaviour
         {
             StartThrusting(mainThrustForce, true);
         }
-        else if (Input.GetKey(KeyCode.W))
-        {
-            StartThrusting(-mainThrustForce, false);
-        }
         else
         {
             StopThrusting();
