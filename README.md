@@ -15,7 +15,7 @@ You are a space pioneer who is coming back from an extrasolar space mission, you
 Your new mission is to overcome all obstacles and get Back to Earth!
 
 # Future additions
-- [ ] There will be 7 levels in all (One per planet of the solar system until Earth).
+- [x] There will be 7 levels in all (One per planet of the solar system until Earth).
 
 # You can play here:
 https://sharemygame.com/@GdmDeveloper/back-to-earth
