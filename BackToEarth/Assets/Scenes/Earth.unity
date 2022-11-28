@@ -3857,16 +3857,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62419c541e2b44247a45fcffdc42746b, type: 3}
---- !u!1 &1416702384 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1439589168216379635, guid: 57e82066f90229a4f9290d91b74be0f4, type: 3}
-  m_PrefabInstance: {fileID: 1439589169391840868}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1418263679 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8032396254981741037, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
-  m_PrefabInstance: {fileID: 5088063448757763070}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1425608545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5797,7 +5787,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3713679005320995962, guid: dbb0655a81615374086bdfb336657247, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -46.349415
+      value: -46.34941
       objectReference: {fileID: 0}
     - target: {fileID: 3713679005320995962, guid: dbb0655a81615374086bdfb336657247, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5805,7 +5795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3713679005320995962, guid: dbb0655a81615374086bdfb336657247, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.925558
+      value: -14.925557
       objectReference: {fileID: 0}
     - target: {fileID: 3713679005320995962, guid: dbb0655a81615374086bdfb336657247, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5817,11 +5807,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3713679005320995962, guid: dbb0655a81615374086bdfb336657247, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00001954204
+      value: -0.000019627496
       objectReference: {fileID: 0}
     - target: {fileID: 3713679005320995962, guid: dbb0655a81615374086bdfb336657247, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000009737125
+      value: 0.0000009779853
       objectReference: {fileID: 0}
     - target: {fileID: 3713679005320995962, guid: dbb0655a81615374086bdfb336657247, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5864,18 +5854,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 362636197, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
-      propertyPath: ui
-      value: 
-      objectReference: {fileID: 1416702384}
-    - target: {fileID: 362636197, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
-      propertyPath: crashSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 0d8bea57b5f80ea419e3af0414f1e279, type: 3}
-    - target: {fileID: 362636197, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
-      propertyPath: isTransitioning
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7472142686235263076, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -5924,10 +5902,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocket
       objectReference: {fileID: 0}
-    - target: {fileID: 8032396254981741037, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
-      propertyPath: m_TagString
-      value: Friendly
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
 --- !u!4 &5088063448757763071 stripped
@@ -5935,15 +5909,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7472142686235263076, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
   m_PrefabInstance: {fileID: 5088063448757763070}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5088063448757763078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1418263679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63628c53d79c7cd448eb259f91be3b06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

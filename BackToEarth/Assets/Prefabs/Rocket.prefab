@@ -724,8 +724,8 @@ MonoBehaviour:
   messageForLoading: 
   isTransitioning: 0
   ui: {fileID: 1439589168216379635, guid: 57e82066f90229a4f9290d91b74be0f4, type: 3}
-  crashSound: {fileID: 8300000, guid: 0d8bea57b5f80ea419e3af0414f1e279, type: 3}
-  successSound: {fileID: 8300000, guid: 171165c446c665649ad79bbe34a9f1f2, type: 3}
+  crashSound: {fileID: 8300000, guid: a38587676d8104c478106cbd92a49eed, type: 3}
+  successSound: {fileID: 8300000, guid: 0437e94f68123b749b2ebd978c16bb34, type: 3}
   crashParticles: {fileID: 1801472275635203069}
   successParticles: {fileID: 5817227073331638207}
 --- !u!65 &379239649146806285

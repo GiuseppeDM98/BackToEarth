@@ -3985,11 +3985,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62419c541e2b44247a45fcffdc42746b, type: 3}
---- !u!1 &1416702384 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1439589168216379635, guid: 57e82066f90229a4f9290d91b74be0f4, type: 3}
-  m_PrefabInstance: {fileID: 1439589169391840868}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1425608545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5920,11 +5915,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3713679005320995962, guid: dbb0655a81615374086bdfb336657247, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000020803045
+      value: -0.000020830212
       objectReference: {fileID: 0}
     - target: {fileID: 3713679005320995962, guid: dbb0655a81615374086bdfb336657247, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000010367628
+      value: 0.0000010381211
       objectReference: {fileID: 0}
     - target: {fileID: 3713679005320995962, guid: dbb0655a81615374086bdfb336657247, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6024,30 +6019,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 314174065, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
-      propertyPath: Loop
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 314174065, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 362636197, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
-      propertyPath: ui
-      value: 
-      objectReference: {fileID: 1416702384}
-    - target: {fileID: 362636197, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
-      propertyPath: isTransitioning
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 670595829, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
-      propertyPath: sideBooster
-      value: 
-      objectReference: {fileID: 8300000, guid: 0437e94f68123b749b2ebd978c16bb34, type: 3}
-    - target: {fileID: 670595829, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
-      propertyPath: mainThrustForce
-      value: 1000
-      objectReference: {fileID: 0}
     - target: {fileID: 7472142686235263076, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -6095,10 +6066,6 @@ PrefabInstance:
     - target: {fileID: 8032396254981741037, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
       propertyPath: m_Name
       value: Rocket
-      objectReference: {fileID: 0}
-    - target: {fileID: 8032396254981741037, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
-      propertyPath: m_TagString
-      value: Friendly
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
