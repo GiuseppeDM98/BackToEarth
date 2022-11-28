@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 0.8
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 4c1cf1f5d299f0a4d850ac09c2f2a2cb, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: aa33825bbb43a574793d304d75539fd4, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.06596127, g: 0.20520192, b: 0.165185, a: 1}
+  m_IndirectSpecularColor: {r: 1.4343953, g: 0.6784648, b: 0.6142294, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -192,6 +192,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -185.316
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 9d1602b54130f2742b9563a1f38cd670, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c0618a46f68272544b901b0609f68156, type: 2}
     - target: {fileID: 7779045189274673168, guid: 9d1602b54130f2742b9563a1f38cd670, type: 3}
       propertyPath: m_Name
       value: EarthObstacle1 (1)
@@ -270,6 +274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthWalls
       objectReference: {fileID: 0}
+    - target: {fileID: 4094932525568801044, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17b1b21b9791f9c4682b8f8a7b634eff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
 --- !u!1001 &75180254
@@ -339,6 +347,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthWalls (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4094932525568801044, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17b1b21b9791f9c4682b8f8a7b634eff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
 --- !u!4 &75180255 stripped
@@ -404,7 +416,7 @@ PrefabInstance:
     - target: {fileID: 5745241170484605207, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 035ea3344d342954e945c3cd885fea98, type: 2}
+      objectReference: {fileID: 2100000, guid: a2cd2a1d55f142a41bd6505b8e034393, type: 2}
     - target: {fileID: 7779045189274673168, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Name
       value: EarthObstacle2 (2)
@@ -469,7 +481,7 @@ PrefabInstance:
     - target: {fileID: 5745241170484605207, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 035ea3344d342954e945c3cd885fea98, type: 2}
+      objectReference: {fileID: 2100000, guid: c0618a46f68272544b901b0609f68156, type: 2}
     - target: {fileID: 7779045189274673168, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Name
       value: EarthObstacle2 (6)
@@ -543,6 +555,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthWalls (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4094932525568801044, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17b1b21b9791f9c4682b8f8a7b634eff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
 --- !u!4 &133680764 stripped
@@ -684,6 +700,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -55
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: e32f5140414ffc94cab7c0fe3deda2da, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d1c3d08ea5ca5b34ebee537c72b77f45, type: 2}
     - target: {fileID: 7779045189274673168, guid: e32f5140414ffc94cab7c0fe3deda2da, type: 3}
       propertyPath: m_Name
       value: MovingObstacle
@@ -748,7 +768,7 @@ PrefabInstance:
     - target: {fileID: 5745241170484605207, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 035ea3344d342954e945c3cd885fea98, type: 2}
+      objectReference: {fileID: 2100000, guid: c0618a46f68272544b901b0609f68156, type: 2}
     - target: {fileID: 7779045189274673168, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Name
       value: EarthObstacle2 (10)
@@ -822,6 +842,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthWalls (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4094932525568801044, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17b1b21b9791f9c4682b8f8a7b634eff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
 --- !u!4 &305760008 stripped
@@ -896,6 +920,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthWalls (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4094932525568801044, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17b1b21b9791f9c4682b8f8a7b634eff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
 --- !u!1001 &411012876
@@ -956,7 +984,7 @@ PrefabInstance:
     - target: {fileID: 5745241170484605207, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 035ea3344d342954e945c3cd885fea98, type: 2}
+      objectReference: {fileID: 2100000, guid: c0618a46f68272544b901b0609f68156, type: 2}
     - target: {fileID: 7779045189274673168, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Name
       value: EarthObstacle2 (9)
@@ -1251,6 +1279,10 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: e32f5140414ffc94cab7c0fe3deda2da, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d1c3d08ea5ca5b34ebee537c72b77f45, type: 2}
     - target: {fileID: 7779045189274673168, guid: e32f5140414ffc94cab7c0fe3deda2da, type: 3}
       propertyPath: m_Name
       value: MovingObstacle
@@ -1322,6 +1354,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 76c62c57c0724754e9701ef6e8a5b2e9, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (17)
@@ -1386,7 +1422,7 @@ PrefabInstance:
     - target: {fileID: 5745241170484605207, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 035ea3344d342954e945c3cd885fea98, type: 2}
+      objectReference: {fileID: 2100000, guid: c0618a46f68272544b901b0609f68156, type: 2}
     - target: {fileID: 7779045189274673168, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Name
       value: EarthObstacle2 (4)
@@ -1538,6 +1574,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a2cd2a1d55f142a41bd6505b8e034393, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle
@@ -1600,6 +1640,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 76c62c57c0724754e9701ef6e8a5b2e9, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (11)
@@ -1666,6 +1710,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -208.508
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 76c62c57c0724754e9701ef6e8a5b2e9, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (18)
@@ -1727,6 +1775,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c0618a46f68272544b901b0609f68156, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (7)
@@ -1805,6 +1857,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthWalls (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4094932525568801044, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17b1b21b9791f9c4682b8f8a7b634eff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
 --- !u!4 &651692444 stripped
@@ -1891,6 +1947,10 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: e32f5140414ffc94cab7c0fe3deda2da, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d1c3d08ea5ca5b34ebee537c72b77f45, type: 2}
     - target: {fileID: 7779045189274673168, guid: e32f5140414ffc94cab7c0fe3deda2da, type: 3}
       propertyPath: m_Name
       value: MovingObstacle (1)
@@ -1964,6 +2024,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthWalls (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4094932525568801044, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17b1b21b9791f9c4682b8f8a7b634eff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
 --- !u!1 &705507993
@@ -2137,6 +2201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthWalls (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4094932525568801044, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17b1b21b9791f9c4682b8f8a7b634eff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
 --- !u!1001 &759541240
@@ -2197,7 +2265,7 @@ PrefabInstance:
     - target: {fileID: 5745241170484605207, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 035ea3344d342954e945c3cd885fea98, type: 2}
+      objectReference: {fileID: 2100000, guid: c0618a46f68272544b901b0609f68156, type: 2}
     - target: {fileID: 7779045189274673168, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Name
       value: EarthObstacle2 (7)
@@ -2259,6 +2327,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 76c62c57c0724754e9701ef6e8a5b2e9, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (15)
@@ -2324,6 +2396,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthGround
       objectReference: {fileID: 0}
+    - target: {fileID: 4094932525568801044, guid: 790a8a79fc7b1c8449c0633892061964, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3631b400256ae364abb733742a092dec, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 790a8a79fc7b1c8449c0633892061964, type: 3}
 --- !u!4 &819487396 stripped
@@ -2390,6 +2466,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 76c62c57c0724754e9701ef6e8a5b2e9, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (9)
@@ -2451,6 +2531,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -208.508
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 76c62c57c0724754e9701ef6e8a5b2e9, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (19)
@@ -2527,6 +2611,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -52.485
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 76c62c57c0724754e9701ef6e8a5b2e9, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (12)
@@ -2627,6 +2715,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a2cd2a1d55f142a41bd6505b8e034393, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (2)
@@ -2835,6 +2927,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 76c62c57c0724754e9701ef6e8a5b2e9, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (16)
@@ -2892,6 +2988,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 76c62c57c0724754e9701ef6e8a5b2e9, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (14)
@@ -2965,6 +3065,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthWalls (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4094932525568801044, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17b1b21b9791f9c4682b8f8a7b634eff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
 --- !u!1001 &1115404399
@@ -3030,6 +3134,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 55.238
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a2cd2a1d55f142a41bd6505b8e034393, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (3)
@@ -3105,6 +3213,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a2cd2a1d55f142a41bd6505b8e034393, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle
@@ -3272,6 +3384,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthWalls (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4094932525568801044, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17b1b21b9791f9c4682b8f8a7b634eff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
 --- !u!4 &1176385745 stripped
@@ -3337,7 +3453,7 @@ PrefabInstance:
     - target: {fileID: 5745241170484605207, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 035ea3344d342954e945c3cd885fea98, type: 2}
+      objectReference: {fileID: 2100000, guid: a2cd2a1d55f142a41bd6505b8e034393, type: 2}
     - target: {fileID: 7779045189274673168, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Name
       value: EarthObstacle2
@@ -3520,6 +3636,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthWalls (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4094932525568801044, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17b1b21b9791f9c4682b8f8a7b634eff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
 --- !u!4 &1224858594 stripped
@@ -3585,7 +3705,7 @@ PrefabInstance:
     - target: {fileID: 5745241170484605207, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 035ea3344d342954e945c3cd885fea98, type: 2}
+      objectReference: {fileID: 2100000, guid: a2cd2a1d55f142a41bd6505b8e034393, type: 2}
     - target: {fileID: 7779045189274673168, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Name
       value: EarthObstacle2 (1)
@@ -3659,6 +3779,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthWalls (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4094932525568801044, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17b1b21b9791f9c4682b8f8a7b634eff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
 --- !u!1 &1282778157
@@ -3857,16 +3981,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62419c541e2b44247a45fcffdc42746b, type: 3}
---- !u!1 &1416702384 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1439589168216379635, guid: 57e82066f90229a4f9290d91b74be0f4, type: 3}
-  m_PrefabInstance: {fileID: 1439589169391840868}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1418263679 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8032396254981741037, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
-  m_PrefabInstance: {fileID: 5088063448757763070}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1425608545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3926,6 +4040,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 76c62c57c0724754e9701ef6e8a5b2e9, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (10)
@@ -4004,6 +4122,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthWalls (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4094932525568801044, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17b1b21b9791f9c4682b8f8a7b634eff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
 --- !u!4 &1519860612 stripped
@@ -4078,6 +4200,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthWalls (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4094932525568801044, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17b1b21b9791f9c4682b8f8a7b634eff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
 --- !u!1001 &1569351690
@@ -4139,6 +4265,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a2cd2a1d55f142a41bd6505b8e034393, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (1)
@@ -4219,6 +4349,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -185.316
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 9d1602b54130f2742b9563a1f38cd670, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 76c62c57c0724754e9701ef6e8a5b2e9, type: 2}
     - target: {fileID: 7779045189274673168, guid: 9d1602b54130f2742b9563a1f38cd670, type: 3}
       propertyPath: m_Name
       value: EarthObstacle1 (2)
@@ -4284,6 +4418,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -133.781
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 9d1602b54130f2742b9563a1f38cd670, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a2cd2a1d55f142a41bd6505b8e034393, type: 2}
     - target: {fileID: 7779045189274673168, guid: 9d1602b54130f2742b9563a1f38cd670, type: 3}
       propertyPath: m_Name
       value: EarthObstacle1
@@ -4372,6 +4510,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthWalls (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4094932525568801044, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17b1b21b9791f9c4682b8f8a7b634eff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
 --- !u!4 &1661521516 stripped
@@ -4434,6 +4576,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a2cd2a1d55f142a41bd6505b8e034393, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (4)
@@ -4498,7 +4644,7 @@ PrefabInstance:
     - target: {fileID: 5745241170484605207, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 035ea3344d342954e945c3cd885fea98, type: 2}
+      objectReference: {fileID: 2100000, guid: c0618a46f68272544b901b0609f68156, type: 2}
     - target: {fileID: 7779045189274673168, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Name
       value: EarthObstacle2 (8)
@@ -4560,6 +4706,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -119.3
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c0618a46f68272544b901b0609f68156, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (6)
@@ -4624,7 +4774,7 @@ PrefabInstance:
     - target: {fileID: 5745241170484605207, guid: 9d1602b54130f2742b9563a1f38cd670, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b486fe0aeb714ed47a369c2a1a9bafba, type: 2}
+      objectReference: {fileID: 2100000, guid: a2cd2a1d55f142a41bd6505b8e034393, type: 2}
     - target: {fileID: 7779045189274673168, guid: 9d1602b54130f2742b9563a1f38cd670, type: 3}
       propertyPath: m_Name
       value: EarthObstacle1
@@ -4709,6 +4859,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 233.04199
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 76c62c57c0724754e9701ef6e8a5b2e9, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (13)
@@ -4778,6 +4932,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.858
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 76c62c57c0724754e9701ef6e8a5b2e9, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (8)
@@ -4857,7 +5015,7 @@ PrefabInstance:
     - target: {fileID: 5745241170484605207, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 035ea3344d342954e945c3cd885fea98, type: 2}
+      objectReference: {fileID: 2100000, guid: 76c62c57c0724754e9701ef6e8a5b2e9, type: 2}
     - target: {fileID: 7779045189274673168, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Name
       value: EarthObstacle2 (12)
@@ -4993,6 +5151,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthWalls (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 4094932525568801044, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17b1b21b9791f9c4682b8f8a7b634eff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
 --- !u!4 &1893833297 stripped
@@ -5058,7 +5220,7 @@ PrefabInstance:
     - target: {fileID: 5745241170484605207, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 035ea3344d342954e945c3cd885fea98, type: 2}
+      objectReference: {fileID: 2100000, guid: c0618a46f68272544b901b0609f68156, type: 2}
     - target: {fileID: 7779045189274673168, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Name
       value: EarthObstacle2 (11)
@@ -5219,6 +5381,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c0618a46f68272544b901b0609f68156, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (5)
@@ -5292,7 +5458,7 @@ PrefabInstance:
     - target: {fileID: 5745241170484605207, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 035ea3344d342954e945c3cd885fea98, type: 2}
+      objectReference: {fileID: 2100000, guid: a2cd2a1d55f142a41bd6505b8e034393, type: 2}
     - target: {fileID: 7779045189274673168, guid: 8d520721eddb02d4f9d79e93a05996fc, type: 3}
       propertyPath: m_Name
       value: EarthObstacle2 (3)
@@ -5470,6 +5636,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthWalls (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4094932525568801044, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17b1b21b9791f9c4682b8f8a7b634eff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb1a3cfe66cd97246836e774cc010672, type: 3}
 --- !u!4 &2013766649 stripped
@@ -5547,6 +5717,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -208.508
       objectReference: {fileID: 0}
+    - target: {fileID: 5745241170484605207, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 76c62c57c0724754e9701ef6e8a5b2e9, type: 2}
     - target: {fileID: 7779045189274673168, guid: 70fccb79393e12f45bfb817dede8b2f7, type: 3}
       propertyPath: m_Name
       value: EarthObstacle (20)
@@ -5774,7 +5948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3713679005320995962, guid: dbb0655a81615374086bdfb336657247, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -46.34944
+      value: -46.349422
       objectReference: {fileID: 0}
     - target: {fileID: 3713679005320995962, guid: dbb0655a81615374086bdfb336657247, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5794,11 +5968,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3713679005320995962, guid: dbb0655a81615374086bdfb336657247, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000018671653
+      value: -0.000019230283
       objectReference: {fileID: 0}
     - target: {fileID: 3713679005320995962, guid: dbb0655a81615374086bdfb336657247, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00000093029433
+      value: 0.0000009581247
       objectReference: {fileID: 0}
     - target: {fileID: 3713679005320995962, guid: dbb0655a81615374086bdfb336657247, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5841,14 +6015,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 362636197, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
-      propertyPath: ui
-      value: 
-      objectReference: {fileID: 1416702384}
-    - target: {fileID: 362636197, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
-      propertyPath: isTransitioning
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7472142686235263076, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -5897,10 +6063,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocket
       objectReference: {fileID: 0}
-    - target: {fileID: 8032396254981741037, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
-      propertyPath: m_TagString
-      value: Friendly
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
 --- !u!4 &5088063448757763071 stripped
@@ -5908,15 +6070,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7472142686235263076, guid: fa6101999a33ac844a32304d400b0b56, type: 3}
   m_PrefabInstance: {fileID: 5088063448757763070}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5088063448757763078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1418263679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63628c53d79c7cd448eb259f91be3b06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

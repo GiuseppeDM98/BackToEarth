@@ -9,6 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Pluto.unity
     guid: c2b97444af4b39445bf6840161412b67
   - enabled: 1
+    path: Assets/Scenes/Neptune.unity
+    guid: 5c9b1969af673114d8e68f33141f7559
+  - enabled: 1
+    path: Assets/Scenes/Uranus.unity
+    guid: 10484198cd5af1a4b87d24576f735518
+  - enabled: 1
+    path: Assets/Scenes/Saturn.unity
+    guid: f9c4ddd908b4f4345bc22e5b5e6bc924
+  - enabled: 1
+    path: Assets/Scenes/Jupiter.unity
+    guid: 71b27874fda65cd42be11ae241fab8ea
+  - enabled: 1
     path: Assets/Scenes/Mars.unity
     guid: 2f646fa6dd5720e4283a825adc78f2a6
   - enabled: 1

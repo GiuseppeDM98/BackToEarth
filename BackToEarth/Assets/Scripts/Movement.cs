@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour
     CollisionHandler collisionHandler;
 
     [SerializeField] AudioClip mainEngine;
-    [SerializeField] private float mainThrustForce = 1000f;
+    [SerializeField] public float mainThrustForce = 2000f;
     [SerializeField] private float rotationThrustForce = 100f;
     [SerializeField] ParticleSystem mainBoosterParticles;
     [SerializeField] ParticleSystem leftSideBoosterParticles;

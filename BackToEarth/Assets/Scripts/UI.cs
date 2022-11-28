@@ -20,7 +20,7 @@ public class UI : MonoBehaviour
 
     public void ChangeTextLevelDisplay(string text)
     {
-        textLevelDisplay.text = "You're on " + text + " gravity is " + Physics.gravity.y + " ms";
+        textLevelDisplay.text = "You're on " + text + ", gravity is " + Physics.gravity.y + " ms";
     }
 
     public void PrintTextForLoading(string text)
@@ -28,7 +28,7 @@ public class UI : MonoBehaviour
         textForLoading.text = text;
     }
 
-    //Quando si cambierà livello idealmente cambierà anche la gravità
+    //Quando si cambierà livello cambierà anche la gravità
     private void ChangeGravityBasedOnScene(string sceneName)
     {
         switch (sceneName)
@@ -41,6 +41,18 @@ public class UI : MonoBehaviour
                 break;
             case "Pluto":
                 Physics.gravity = new Vector3(0, -0.62F, 0);
+                break;
+            case "Neptune":
+                Physics.gravity = new Vector3(0, -11.15F, 0);
+                break;
+            case "Uranus":
+                Physics.gravity = new Vector3(0, -8.87F, 0);
+                break;
+            case "Saturn":
+                Physics.gravity = new Vector3(0, -10.44F, 0);
+                break;
+            case "Jupiter":
+                Physics.gravity = new Vector3(0, -24.79F, 0);
                 break;
         }
     }
