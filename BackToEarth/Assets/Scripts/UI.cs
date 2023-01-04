@@ -20,7 +20,7 @@ public class UI : MonoBehaviour
 
     public void ChangeTextLevelDisplay(string text)
     {
-        textLevelDisplay.text = "You're on " + text + ", gravity is " + Physics.gravity.y + " ms";
+        textLevelDisplay.text = "You're on " + text + ", gravity is " + Physics.gravity.y + " m/s²";
     }
 
     public void PrintTextForLoading(string text)
