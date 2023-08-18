@@ -19,3 +19,5 @@ Your new mission is to overcome all obstacles and get Back to Earth!
 
 # You can play here:
 https://sharemygame.com/@GdmDeveloper/back-to-earth
+
+https://gdmdeveloper.itch.io
