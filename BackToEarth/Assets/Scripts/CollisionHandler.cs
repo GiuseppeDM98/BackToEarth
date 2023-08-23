@@ -27,7 +27,7 @@ public class CollisionHandler : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if(isTransitioning) { return; }
+        if (isTransitioning) { return; }
         switch (collision.gameObject.tag)
         {
             case "Friendly":
@@ -83,7 +83,7 @@ public class CollisionHandler : MonoBehaviour
     {
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
         //Se ho raggiunto la fine dei livelli ricarico il primo
-        if(nextSceneIndex == SceneManager.sceneCountInBuildSettings)
+        if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
         {
             nextSceneIndex = 0;
         }
@@ -91,11 +91,11 @@ public class CollisionHandler : MonoBehaviour
         print("Loaded next level");
     }
 
-    //se bool è true lo script carica il prossimo livello, altrimenti ricarica il livello attuale
+    //se bool ï¿½ true lo script carica il prossimo livello, altrimenti ricarica il livello attuale
     IEnumerator WaitSecondsBeforeLoadingScene(float delayTime, bool choice)
     {
         yield return new WaitForSeconds(delayTime);
-        if(choice)
+        if (choice)
         {
             LoadNextLevel();
         }

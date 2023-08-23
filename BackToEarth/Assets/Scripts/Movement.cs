@@ -62,7 +62,7 @@ public class Movement : MonoBehaviour
 
     void StartThrusting(float forceApplied, bool playParticleEffects)
     {
-        //scrivere Vector3.up è uguale a 0, 1, 0
+        //scrivere Vector3.up ï¿½ uguale a 0, 1, 0
         rb.AddRelativeForce(forceApplied * Time.deltaTime * Vector3.up);
         if (!audioSource.isPlaying)
         {
@@ -110,7 +110,7 @@ public class Movement : MonoBehaviour
     private void ApplyRotation(float rotationThisFrame)
     {
         rb.freezeRotation = true;
-        //scrivere Vector3.forward è uguale a 0, 0, 1
+        //scrivere Vector3.forward ï¿½ uguale a 0, 0, 1
         transform.Rotate(rotationThisFrame * Time.deltaTime * Vector3.forward);
         rb.freezeRotation = false;
     }
